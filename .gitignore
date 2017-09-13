@@ -1,0 +1,10 @@
+.DS_Store
+npm-debug.log
+demo/build
+node_modules
+starter-kit/**/dist
+bundle
+coverage
+*.log
+.idea
+
