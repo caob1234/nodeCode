@@ -1,4 +1,4 @@
-drizzlejs向外部暴漏出来的方法，也就是放到D变量中的function有四个，分别是：
+drizzlejs向外部暴漏出来的方法，也就是利用assign放到D变量中的function有四个，分别是：
 
 assign：用于将两组数据相加，并返回相加之后的数据。不受array，object，function类型限制。
 
