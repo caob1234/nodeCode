@@ -1,0 +1,1 @@
+const drizzle = require('../drizzlejs');

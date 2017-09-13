@@ -10,6 +10,6 @@
     "node": ">=0.11.16"
   },
   "devDependencies": {
-    "drizzle": "^0.1.0"
+    "drizzlejs": "^0.4.17"
   }
 }
