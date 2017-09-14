@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "drizzlejs": "^0.4.17",
-    "eslint": "^4.6.1"
+    "eslint": "^4.6.1",
+    "gulp-util": "^3.0.8"
   }
 }
