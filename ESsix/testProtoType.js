@@ -13,3 +13,12 @@ tiger.meow();
 
 gutil.log(Object.getPrototypeOf(tiger.meow.prototype));
 
+let myArray = function () {};
+myArray.prototype = new Array();
+myArray.prototype.construct = myArray;
+let mine = new myArray();
+mine.push(1,2,3);
+gutil.log(mine.length);
+gutil.log(mine instanceof Array);
+
+
