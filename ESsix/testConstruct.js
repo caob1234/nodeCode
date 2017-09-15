@@ -31,3 +31,6 @@ fish.meow = function () {
 };
 fish.meow(); // I am in water  //如果实例对象本身就有meow()那么它就不会再去原型对象寻找这个方法。
 dog.meow();  // mew,mew
+
+exports.animal = animal;
+
