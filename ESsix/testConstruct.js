@@ -34,3 +34,8 @@ dog.meow();  // mew,mew
 
 exports.animal = animal;
 
+function P() {}
+var p = new P();
+
+gutil.log(P.prototype.constructor === P);
+gutil.log(p.constructor);   // 通过constructor属性可以判断原型对象属于哪个构造函数
