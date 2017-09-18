@@ -21,4 +21,14 @@ mine.push(1,2,3);
 gutil.log(mine.length);
 gutil.log(mine instanceof Array);
 
+var getDefiningObject =(obj, propKey) => {  //箭头函数不可以当作构造函数，因此不可以使用new来实例化
+    while (obj && !{}.hasOwnProperty.call(obj, propKey)) {
+        obj = Object.getPrototypeOf(obj);
+    }
+    return obj;
+}
+
+gutil.log(getDefiningObject(tiger,'meow'));
+gutil.log(getDefiningObject(myArray,'construct'));
+
 
