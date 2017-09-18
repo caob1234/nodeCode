@@ -38,4 +38,5 @@ function P() {}
 var p = new P();
 
 gutil.log(P.prototype.constructor === P);
-gutil.log(p.constructor);   // 通过constructor属性可以判断原型对象属于哪个构造函数
+gutil.log(p.constructor === RegExp);   // 通过constructor属性可以判断原型对象属于哪个构造函数
+gutil.log(p instanceof P);  // instanceof判断某个对象是否为某个构造函数的实例，instanceof的原理是检查原型链。
