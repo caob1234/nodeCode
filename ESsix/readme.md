@@ -37,3 +37,5 @@ module.exports可以达到引入类的效果。
 （4）不可以使用yield命令，因此箭头函数不能用作 Generator 函数。
 
 5.Object.prototype._proto_,可以改写某个对象的原型对象。
+
+尽量少用这个属性，而是用Object.getPrototypeof()（读取）和Object.setPrototypeOf()（设置）
