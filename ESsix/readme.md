@@ -39,3 +39,12 @@ module.exports可以达到引入类的效果。
 5.Object.prototype._proto_,可以改写某个对象的原型对象。
 
 尽量少用这个属性，而是用Object.getPrototypeof()（读取）和Object.setPrototypeOf()（设置）
+
+6.对象是什么
+
+对象是单个实物的抽象。
+属性是对象的状态，方法是对象的行为。
+
+7.构造函数
+
+javaScript语言使用构造函数作为对象的模板。所谓构造函数，就是专门用来生成对象的函数。
