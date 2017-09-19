@@ -6,7 +6,7 @@ var Person = function (name,age) {
     return {name:'monkey'};
 };
 
-function _new(_constructor,param1) {
+function _new() {
     let args = [].slice.call(arguments);
     let constructor = args.shift();
     // 创建一个空对象，继承构造函数的prototype属性
