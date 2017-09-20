@@ -18,3 +18,7 @@ function _new() {
 
 var actor = _new(Person,'张三',28);
 gutil.log(actor);
+let arr = [1,2,3];
+gutil.log(arr.length);
+gutil.log(arr.shift());
+gutil.log(arr.length);
