@@ -1,5 +1,5 @@
-import add from '../add';
-import chai from 'chai';
+const add=require('../add');
+const chai=require('chai');
 
 let expect = chai.expect;
 

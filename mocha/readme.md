@@ -6,6 +6,8 @@
 
 测试文件必须放到test文件夹里面，像这样写：../node_modules/mocha/bin/mocha -R markdown
 
+mocha -R markdown > spec.md 在test文件夹的父目录下生成markdown格式，名称为spec.md的文件。
+
 3.  ../node_modules/mocha/bin/mocha --compilers js:babel-core/register 这条命令测试es6文件。
 
 mocha的测试文件，需要放到test文件夹下面，命令才能生效。
