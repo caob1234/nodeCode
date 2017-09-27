@@ -8,4 +8,4 @@
 mocha测试
 
 参考资料：http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html
-        http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html
+        https://iyaozhen.com/use-karma-and-mocha-for-fe-tdd.html
