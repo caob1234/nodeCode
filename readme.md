@@ -4,6 +4,7 @@
 
 
 参考资料：http://javascript.ruanyifeng.com/
+        http://es6.ruanyifeng.com/#docs/async
 
 mocha测试
 
