@@ -6,7 +6,6 @@ let a = Object.getPrototypeOf(Object.prototype);
 gutil.log(a);
 
 gutil.log(Object.getPrototypeOf(c.animal.prototype));
-console.log("why debug invalid");
 
 let tiger = new c.animal('cat');
 
