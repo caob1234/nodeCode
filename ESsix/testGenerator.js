@@ -19,4 +19,4 @@ const gen = async function () {
 
 gen();
 
-//Generator函数在目前的版本貌似已经不支持
+//Generator函数在目前的版本貌似已经不支持,作为Generator函数的语法糖，async代替了它
