@@ -21,7 +21,7 @@ var req = http.request(options,function(res){
 req.on('error',function(e){
 	console.log('problem with request:'+e.message);
 
-})
+});
 req.write('data\n');
 req.write('data\n');
 req.end();

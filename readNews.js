@@ -24,7 +24,7 @@ emitter.on('event1',function(message){
 //为健壮性考虑，事件发布订阅代码都应该添加error事件捕获异常代码
 emitter.on('error',function(e){
 	console.log("problem with EventEmitter:"+e.message);
-})
+});
 //发布
 emitter.emit('event1',"I am message1!");
 emitter.emit('event2',"I am message2!");

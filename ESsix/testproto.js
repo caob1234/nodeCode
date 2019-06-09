@@ -12,6 +12,6 @@ gutil.log(obj.__proto__);
 gutil.log(obj.constructor.prototype);
 gutil.log(Object.getPrototypeOf(obj));  //建议用该方式获取原型对象。
 
-let o = new Object();
+let o = {};
 
-gutil.log(Object.getPrototypeOf(o) === Object.prototype)
+gutil.log(Object.getPrototypeOf(o) === Object.prototype);

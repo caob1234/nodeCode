@@ -1,5 +1,5 @@
 function createComparisonFunction(property) {
-    return funtcion (f1,f2){
+    return funtcion (f1,f2);{
         return f1(property) == f2(property);
     }
 }

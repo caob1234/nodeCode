@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 const events=require("events");
 
 
@@ -21,7 +21,7 @@ Promise.prototype.then = function(fulfilledHandler,errorHandler,progressHandler)
 		this.once('progress',progressHandler);
 	}
 	return this;
-}
+};
 
 let Deferred = function(){
 	this.state = 'unfulfilled';
@@ -31,4 +31,4 @@ let Deferred = function(){
 Deferred.prototype.resolve = function(obj){
 	this.state = 'fulfilled';
 	this.promise.emit('success',obj);
-}
+};

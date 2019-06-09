@@ -14,7 +14,7 @@ tiger.meow();
 gutil.log(Object.getPrototypeOf(tiger.meow.prototype));
 
 let myArray = function () {};
-myArray.prototype = new Array();
+myArray.prototype = [];
 myArray.prototype.construct = myArray;
 myArray.prototype.construct = myArray;
 let mine = new myArray();
@@ -27,7 +27,7 @@ var getDefiningObject =(obj, propKey) => {  //箭头函数不可以当作构造�
         obj = Object.getPrototypeOf(obj);
     }
     return obj;
-}
+};
 
 gutil.log(getDefiningObject(tiger,'meow'));
 gutil.log(getDefiningObject(myArray,'construct'));

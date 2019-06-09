@@ -10,7 +10,7 @@ connection.on('ready', function () {
         console.log('Queue ' + queue.name + ' is open!');  
         queue.subscribe(function (message, header, deliveryInfo) {  
             if (message.data) {  
-                var messageText = message.data.toString()  
+                var messageText = message.data.toString();
                 console.log(messageText);  
                 if (messageText === "quit") bStop = true;  
             }  

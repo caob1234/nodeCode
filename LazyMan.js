@@ -15,7 +15,7 @@ function _LazyMan(_name) {
 _LazyMan.prototype.next = function() {
     var _fn = this.tasks.shift();
     _fn && _fn();
-}
+};
 _LazyMan.prototype.sleep = function(_time) {
     var _this = this;
     _this.tasks.push(function() {
@@ -25,7 +25,7 @@ _LazyMan.prototype.sleep = function(_time) {
         }, _time);
     });
     return _this;
-}
+};
 _LazyMan.prototype.sleepFirst = function(_time) {
     var _this = this;
     _this.tasks.unshift(function() {
@@ -35,7 +35,7 @@ _LazyMan.prototype.sleepFirst = function(_time) {
         }, _time);
     });
     return _this;
-}
+};
 _LazyMan.prototype.eat = function(_eat) {
     var _this = this;
     _this.tasks.push(function() {
@@ -43,11 +43,11 @@ _LazyMan.prototype.eat = function(_eat) {
         _this.next();
     });
     return _this;
-}
+};
 
 // ·â×°¶ÔÏó
 var LazyMan = function(_name) {
     return new _LazyMan(_name);
-}
+};
 
-console.log(LazyMan('LazyMan').sleep('测试').eat('eat'))
+console.log(LazyMan('LazyMan').sleep('测试').eat('eat'));
