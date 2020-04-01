@@ -19,7 +19,8 @@ class DelayedGreeter {
     }
 }
 const greeter = new DelayedGreeter('World');
-greeter.greet();//will print "hello undefined",because scope of sb function and scope of setTimeout function are different.
+greeter.greet();
+//will print "hello undefined",because scope of sb function and scope of setTimeout function are different.
 //You can solve the problem by bind before ES2015.Now,you can solve it by arrow function
 class DelayedGreeterr {
     constructor(name) {

@@ -13,6 +13,9 @@
 
 3.require,exports和module.exports
 
+不论是核心模块还是文件模块，require()方法对相同模块的二次加载都一律采用优先的方式，这是第一优先级。不同之处在于核心模块的缓存检查先于
+文件模块的缓存检查。
+
 require引入node_modules里面的js（自定义模块）时，直接写require('package.json中的name')；而引入非node_modules下的js时（文件模块），
 需要严格按照相对路径写require('./aaa')，而不能写成require('aaa');文件模块的require标识符引入必须以.或..或绝对路径开头。
 

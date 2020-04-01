@@ -12,7 +12,7 @@ connection.on('ready', function () {
             if (message.data) {  
                 var messageText = message.data.toString();
                 console.log(messageText);  
-                if (messageText === "quit") bStop = true;  
+                if (messageText === 'quit') bStop = true;  
             }  
         });  
     });  
