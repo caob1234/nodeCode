@@ -1,3 +1,4 @@
+const Deferred=require('./deferredImpl');
 // res.setEncoding('utf8');
 // res.on('data',function (chunk) {
 //     console.log('BODY:'+chunk);
@@ -8,15 +9,15 @@
 // res.on('error',function () {
 //     //Error
 // });
-res.then(function () {
-    //Done
-},function (err) {
-    //Error
-},function (chunk) {
-    // eslint-disable-next-line no-console
-    console.log('BODY:'+chunk);
-});
-var promisefy=function (res) {
+// res.then(function () {
+//     //Done
+// },function (err) {
+//     //Error
+// },function (chunk) {
+//     // eslint-disable-next-line no-console
+//     console.log('BODY:'+chunk);
+// });
+let promisefy=function (res) {
     var deferred=new Deferred();
     var result='';
     res.on('data',function (chunk) {
@@ -31,3 +32,11 @@ var promisefy=function (res) {
     });
     return deferred.promise;
 };
+promisefy(res).then(function () {
+    //Done
+},function (err) {
+    //Error
+},function (chunk) {
+    //progress
+    console.log('BODY:'+chunk);
+});

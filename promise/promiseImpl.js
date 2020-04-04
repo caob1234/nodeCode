@@ -1,6 +1,6 @@
-import {EventEmitter} from "mocha/lib/browser/events";
-
-var Promise=function () {
+const EventEmitter=require('events');
+const util=require('util');
+let Promise=function () {
     EventEmitter.call(this);
 };
 util.inherits(Promise,EventEmitter);
@@ -14,4 +14,6 @@ Promise.prototype.then=function (fulfilledHander,errorHandler,progressHandler) {
     if (typeof progressHandler==='function'){
         this.once('progress',progressHandler);
     }
+    return this;
 }
+exports.Promise=Promise;

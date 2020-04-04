@@ -1,4 +1,5 @@
-var Deferred=function () {
+const Promise=require('./promiseImpl');
+let Deferred=function () {
     this.state='unfulfiled';
     this.promise=new Promise();
 };
@@ -13,3 +14,4 @@ Deferred.prototype.reject=function (err) {
 Deferred.prototype.progress=function (data) {
     this.promise.emit('progress',data);
 };
+exports.Deferred=Deferred;
