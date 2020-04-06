@@ -26,6 +26,8 @@ exports后面放的是函数名称，不是函数；可以：exports.animal = an
 
 module.exports可以达到引入类的效果。
 
+import关键字是ES2015模块导入的方式，可参考：https://mp.weixin.qq.com/s?__biz=MjM5NTEwMTAwNg==&mid=401128954&idx=2&sn=234a0a49f1790d520a64b624da297c06&scene=0#wechat_redirect
+
 4.es6中的箭头函数
 
 （1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
