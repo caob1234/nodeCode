@@ -6,4 +6,5 @@ function* helloWorldGeneratorFunction() {
   return '!';
 }
 
-let helloWorldGenerator = helloWorldGeneratorFunction();
+let hw=helloWorldGeneratorFunction();
+console.log(hw.next().value+" "+hw.next().value+hw.next().value);
