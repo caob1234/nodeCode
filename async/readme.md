@@ -11,3 +11,6 @@ value属性表示当前的内部状态的值，是yield表达式后面那个表�
 总结：
 相关知识点提到的例子：
 ![相关知识点提到的例子](nodejs_async.png)
+nodejs事项异步的三个元素：事件循坏，观察者模式，请求对象。
+在linux上epoll实现事件循坏，在MacOs上由kqueue实现，windows上由IOCP实现。最终由libuv统一向上层提供接口。
+执行每个循坏体的过程称为Tick。每个Tick的过程就是查看是否有事件待处理。
