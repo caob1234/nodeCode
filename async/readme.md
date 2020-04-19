@@ -7,3 +7,7 @@ Generator函数有多种理解角度。语法上，首先可以把它理解成�
 value属性表示当前的内部状态的值，是yield表达式后面那个表达式的值；done属性是一个布尔值，表示是否遍历结束。
 
 参考资料：https://es6.ruanyifeng.com/#docs/generator
+
+总结：
+相关知识点提到的例子：
+![相关知识点提到的例子](nodejs_async.png)
